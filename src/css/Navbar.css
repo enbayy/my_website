@@ -18,16 +18,12 @@
     gap: 15px;
 }
 
-.navbar-menu li {
-    display: inline;
-}
-
-.navbar-menu li a {
+.link {
     color: white;
     text-decoration: none;
 }
 
-.navbar-menu li a:hover {
+.link:hover {
     text-decoration: underline;
 }
 
