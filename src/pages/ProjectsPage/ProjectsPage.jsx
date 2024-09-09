@@ -5,7 +5,7 @@ import '../../css/Projects.css'
 
 function ProjectsPage() {
   return (
-    <div className='projects'>
+    <div className='project-main'>
       {
         projects?.map((project) => (
           <Projects key={project.id} project={project} />

@@ -5,10 +5,10 @@ function Projects({ project }) {
     return (
         <div className='project'>
             <div>
-                <img src={image} width={250} height={250} alt="" />
-                <h4>{title}</h4>
-                <h5>{description}</h5>
-                <h6>{link}</h6>
+                <img className='image' src={image} width={250} height={250} alt="" />
+                <h4 className='title'>{title}</h4>
+                <h5 className='pro-desc'>{description}</h5>
+                <div className='pro-link'><a className='link' href={link} target='_blank'>Videoyu izlemek için tıkla</a></div>
             </div>
         </div>
     )
