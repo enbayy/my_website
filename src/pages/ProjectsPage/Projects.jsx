@@ -4,7 +4,7 @@ function Projects({ project }) {
     const { id, title, description, link, image } = project;
     return (
         <div className='project'>
-            <div>
+            <div className='project-all'>
                 <img className='image' src={image} width={250} height={250} alt="" />
                 <h4 className='title'>{title}</h4>
                 <h5 className='pro-desc'>{description}</h5>

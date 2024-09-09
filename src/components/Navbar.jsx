@@ -9,7 +9,6 @@ function Navbar() {
             <ul className="navbar-menu">
                 <div className="navbar-menu">
                     <Link className='navbar-link' to="/"> Home </Link>
-                    <Link className='navbar-link' to="/about"> About </Link>
                     <Link className='navbar-link' to="/projects"> Projects </Link>
                     <Link className='navbar-link' to="/contact"> Contact </Link>
                     <Link className='navbar-link' to="/about"> About </Link>
