@@ -12,10 +12,11 @@ section {
     min-height: 100vh;
     padding: 20px;
     position: relative;
+    transition: background 1s ease-in-out;
 }
 
 #home {
-    background: linear-gradient(45deg, #5c5b5d, #1d1d1d);
+    background: linear-gradient(135deg, #1f1c2c, #928dab);
     background-size: 400% 400%;
     animation: gradientAnimation 10s ease infinite;
     display: flex;
@@ -23,6 +24,14 @@ section {
     align-items: center;
     color: white;
     text-align: center;
+}
+
+#projects,
+#contact,
+#about {
+    background: linear-gradient(135deg, #1f1c2c, #928dab);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
 }
 
 @keyframes gradientAnimation {
@@ -39,14 +48,6 @@ section {
     }
 }
 
-#projects {
-    background-color: #eaeaea;
-}
-
-#contact {
-    background-color: #dcdcdc;
-}
-
-#about {
-    background-color: #cccccc;
+html {
+    scroll-behavior: smooth;
 }
