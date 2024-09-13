@@ -1,4 +1,52 @@
-body{
-    margin: 0px;
-    padding: 0px;
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.content {
+    padding: 0;
+}
+
+section {
+    min-height: 100vh;
+    padding: 20px;
+    position: relative;
+}
+
+#home {
+    background: linear-gradient(45deg, #5c5b5d, #1d1d1d);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    50% {
+        background-position: 100% 100%;
+    }
+
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+#projects {
+    background-color: #eaeaea;
+}
+
+#contact {
+    background-color: #dcdcdc;
+}
+
+#about {
+    background-color: #cccccc;
 }
