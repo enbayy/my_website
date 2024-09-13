@@ -7,7 +7,6 @@ function HomePage() {
 
   return (
     <section id="home">
-      
       <div className="animated-background">
         <div className="home-title-container">
           <div className="home-name">Enes Bayar</div>
@@ -17,18 +16,26 @@ function HomePage() {
                 {letter === " " ? "\u00A0" : letter}
               </span>
             ))}
-            <BsLinkedin />
           </div>
+          <a
+            className='linked-icon'
+            href="https://www.linkedin.com/in/enesbayarr/"
+            target='_blank'>
+            <BsLinkedin />
+          </a>
         </div>
-        <div className="circle one"></div>
-        <div className="circle two"></div>
-        <div className="circle three"></div>
-        <div className="square one"></div>
-        <div className="square two"></div>
-        <div className="circle one"></div>
-        <div className="circle two"></div>
-        <div className="circle three"></div>
-        <div className="square one"></div>
+        
+        {/* 10 Ince Yay Çubuklar */}
+        <div className="bar one"></div>
+        <div className="bar two"></div>
+        <div className="bar three"></div>
+        <div className="bar four"></div>
+        <div className="bar five"></div>
+        <div className="bar six"></div>
+        <div className="bar seven"></div>
+        <div className="bar eight"></div>
+        <div className="bar nine"></div>
+        <div className="bar ten"></div>
       </div>
     </section>
   );

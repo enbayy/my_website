@@ -21,7 +21,6 @@
     overflow: hidden;
 }
 
-/* Ana başlık tasarımı */
 .home-title-container {
     z-index: 2;
     display: flex;
@@ -49,6 +48,11 @@
     color: #fff;
 }
 
+.linked-icon {
+    font-size: 30px;
+    color: black;
+}
+
 .fade-in-out {
     display: inline-block;
     opacity: 0;
@@ -57,12 +61,9 @@
 }
 
 @keyframes fadeInOut {
-
-    0%,
-    100% {
+    0%, 100% {
         opacity: 0;
     }
-
     50% {
         opacity: 1;
     }
@@ -72,83 +73,90 @@
     0% {
         transform: scale(1);
     }
-
     50% {
         transform: scale(1.1);
     }
-
     100% {
         transform: scale(1);
     }
 }
 
-/* Hareketli daireler ve şekiller */
-.circle,
-.square {
+.bar {
     position: absolute;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.2);
-    animation: moveShapes 15s infinite ease-in-out;
+    width: 4px;
+    height: 150px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    animation: moveBars 15s infinite ease-in-out;
 }
 
-.circle {
-    border-radius: 50%;
-}
-
-.circle.one {
-    width: 200px;
-    height: 200px;
-    top: 10%;
-    left: -10%;
+.bar.one {
+    top: 20%;
+    left: 5%;
     animation-delay: 0s;
 }
 
-.circle.two {
-    width: 300px;
-    height: 300px;
-    bottom: -20%;
-    right: -10%;
+.bar.two {
+    top: 60%;
+    right: 10%;
     animation-delay: 5s;
 }
 
-.circle.three {
-    width: 100px;
-    height: 100px;
-    top: 40%;
-    right: -5%;
-    animation-delay: 3s;
-}
-
-.square {
-    background-color: rgba(255, 255, 255, 0.3);
-    border-radius: 0;
-}
-
-.square.one {
-    width: 150px;
-    height: 150px;
+.bar.three {
     top: 50%;
-    left: 10%;
+    left: 30%;
     animation-delay: 2s;
 }
 
-.square.two {
-    width: 200px;
-    height: 200px;
+.bar.four {
     bottom: 10%;
-    left: 40%;
-    animation-delay: 8s;
+    right: 30%;
+    animation-delay: 3s;
 }
 
-@keyframes moveShapes {
+.bar.five {
+    top: 30%;
+    left: 20%;
+    animation-delay: 4s;
+}
+
+.bar.six {
+    bottom: 20%;
+    left: 15%;
+    animation-delay: 2s;
+}
+
+.bar.seven {
+    top: 20%;
+    right: 50%;
+    animation-delay: 4s;
+}
+
+.bar.eight {
+    bottom: 60%;
+    right: 5%;
+    animation-delay: 1s;
+}
+
+.bar.nine {
+    top: 30%;
+    left: 70%;
+    animation-delay: 0s;
+}
+
+.bar.ten {
+    bottom: 10%;
+    right: 20%;
+    animation-delay: 3s;
+}
+
+@keyframes moveBars {
     0% {
         transform: translateY(0) translateX(0) rotate(0deg);
     }
-
     50% {
-        transform: translateY(-20vh) translateX(20vw) rotate(360deg);
+        transform: translateY(-30vh) translateX(15vw) rotate(360deg);
     }
-
     100% {
         transform: translateY(0) translateX(0) rotate(720deg);
     }

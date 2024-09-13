@@ -4,15 +4,33 @@ body {
     overflow-x: hidden;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Bu, tüm elementlerin doğru şekilde hizalanmasını sağlar */
+}
+
 .content {
+    margin: 0;
     padding: 0;
 }
 
 section {
     min-height: 100vh;
-    padding: 20px;
+    padding: 0;
+    margin: 0; /* Boşlukları kaldırmak için margin'i sıfırlayın */
     position: relative;
     transition: background 1s ease-in-out;
+}
+
+section h1, section p {
+    margin: 0;
+    padding: 0;
+}
+
+#contact, #about {
+    padding: 0;
+    margin: 0;
 }
 
 #home {
@@ -26,12 +44,19 @@ section {
     text-align: center;
 }
 
+#services {
+    padding: 0;
+    margin: 0; /* Bu satırı ekleyin */
+}
+   
 #projects,
 #contact,
 #about {
     background: linear-gradient(135deg, #1f1c2c, #928dab);
     background-size: 400% 400%;
     animation: gradientAnimation 10s ease infinite;
+    padding: 0;
+    margin: 0; /* Bu satırı ekleyin */
 }
 
 @keyframes gradientAnimation {

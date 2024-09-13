@@ -1,9 +1,11 @@
-import './App.css'
-import Navbar from './components/Navbar'
-import HomePage from './pages/HomePage/HomePage'
-import ProjectsPage from './pages/ProjectsPage/ProjectsPage'
-import ContactPage from './pages/ContactPage/ContactPage'
-import AboutPage from './pages/AboutPage/AboutPage'
+import React from 'react';
+import './App.css';
+import Navbar from './components/Navbar';
+import HomePage from './pages/HomePage/HomePage';
+import ProjectsPage from './pages/ProjectsPage/ProjectsPage';
+import ContactPage from './pages/ContactPage/ContactPage';
+import AboutPage from './pages/AboutPage/AboutPage';
+import ServicesPage from './pages/ServicesPage/ServicesPage';
 
 function App() {
   return (
@@ -16,6 +18,9 @@ function App() {
         <section id="projects">
           <ProjectsPage />
         </section>
+        <section id="services">
+          <ServicesPage />
+        </section>
         <section id="contact">
           <ContactPage />
         </section>
@@ -24,7 +29,7 @@ function App() {
         </section>
       </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
