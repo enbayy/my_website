@@ -4,7 +4,7 @@ import '../../css/AboutPage.css';
 function AboutPage() {
   return (
     <div className="about-container">
-      <h1 className="about-title">About Me</h1>
+      <h1 className="about-title">Kim bu Enes?</h1>
       <div className="about-content">
         <p>Merhaba, ben Enes Bayar. 2024 yılında Selçuk Üniversitesi Bilgisayar Mühendisliği bölümünden mezun oldum.
           Üniversite hayatım boyunca teknoloji ve yazılım dünyasında çeşitli alanlarda kendimi geliştirme fırsatı buldum.

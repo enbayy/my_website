@@ -1,11 +1,13 @@
 import React from 'react';
 import '../../css/HomePage.css';
+import { BsLinkedin } from "react-icons/bs";
 
 function HomePage() {
   const text = "Web Developer";
 
   return (
     <section id="home">
+      
       <div className="animated-background">
         <div className="home-title-container">
           <div className="home-name">Enes Bayar</div>
@@ -15,6 +17,7 @@ function HomePage() {
                 {letter === " " ? "\u00A0" : letter}
               </span>
             ))}
+            <BsLinkedin />
           </div>
         </div>
         <div className="circle one"></div>

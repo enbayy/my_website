@@ -3,7 +3,7 @@
     justify-content: space-around;
     align-items: center;
     padding: 10px 20px;
-    background-color: black;
+    background: linear-gradient(135deg, #1f1c2c, #928dab);
     color: white;
     position: -webkit-sticky;
     position: sticky;
