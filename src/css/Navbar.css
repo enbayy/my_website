@@ -27,11 +27,31 @@
 .navbar-link {
     font-size: 20px;
     color: white;
+    padding: 7px;
     text-decoration: none;
 }
 
-.link:hover {
-    text-decoration: underline;
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    50% {
+        background-position: 100% 100%;
+    }
+
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+.navbar-link:hover {
+    text-decoration: none;
+    background: linear-gradient(135deg, #1f1c2c, #928dab);
+    background-size: 400% 400%;
+    animation: gradientAnimation 3s ease forwards;
+    border-radius: 10px;
+    box-shadow: 0px 5px 8px black;
 }
 
 .navbar-search input {

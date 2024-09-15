@@ -20,8 +20,10 @@ section {
     padding: 0;
     margin: 0;
     position: relative;
-    transition: background 1s ease-in-out;
+    background-color: #f0f0f0;
+    transition: background-color 1s ease-in-out;
 }
+
 
 section h1,
 section p {
@@ -33,6 +35,20 @@ section p {
 #about {
     padding: 0;
     margin: 0;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    50% {
+        background-position: 100% 100%;
+    }
+
+    100% {
+        background-position: 0% 0%;
+    }
 }
 
 #home {
@@ -53,26 +69,13 @@ section p {
 
 #projects,
 #contact,
-#about,#services {
+#about,
+#services {
     background: linear-gradient(135deg, #1f1c2c, #928dab);
     background-size: 400% 400%;
     animation: gradientAnimation 10s ease infinite;
     padding: 0;
     margin: 0;
-}
-
-@keyframes gradientAnimation {
-    0% {
-        background-position: 0% 0%;
-    }
-
-    50% {
-        background-position: 100% 100%;
-    }
-
-    100% {
-        background-position: 0% 0%;
-    }
 }
 
 html {

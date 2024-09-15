@@ -30,11 +30,11 @@
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     animation: fadeIn 1s ease-in-out;
-    max-height: 950px;
+    max-height: 904px;
 }
 
 .about-title {
-    font-size: 42px;
+    font-size: 40px;
     font-weight: bold;
     margin-bottom: 30px;
     text-align: left;
@@ -47,7 +47,7 @@
 
 .about-content {
     font-size: 18px;
-    line-height: 1.8;
+    line-height: 1.7;
     color: #555;
     text-align: justify;
     animation: fadeIn 2s ease-in-out;
