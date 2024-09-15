@@ -24,8 +24,6 @@ function HomePage() {
             <BsLinkedin />
           </a>
         </div>
-        
-        {/* 10 Ince Yay Çubuklar */}
         <div className="bar one"></div>
         <div className="bar two"></div>
         <div className="bar three"></div>
