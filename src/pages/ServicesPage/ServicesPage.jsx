@@ -1,26 +1,8 @@
 import React from 'react';
+
 import '../../css/ServicesPage.css';
 
-function ServicesPage() {
-  const services = [
-    {
-      title: "Web Geliştirme",
-      description: "Profesyonel ve kurumsal web tasarım çalışmalarım, sizlere sektörde fark yaratma ve rakiplerden bir adım daha önde olma fırsatı tanıyor."
-    },
-    {
-      title: "UI/UX Tasarımı",
-      description: "Kullanıcı dostu ve estetik arayüz tasarımları."
-    },
-    {
-      title: "SEO Danışmanlığı",
-      description: "Web sitenizi arama motorlarında üst sıralara çıkarma."
-    },
-    {
-      title: "Mobil Uygulama Geliştirme",
-      description: "iOS ve Android için mobil uygulamalar."
-    }
-  ];
-
+function ServicesPage({services}) {
   return (
     <div className="services-container">
       <h2 className="services-title">Hizmetler</h2>

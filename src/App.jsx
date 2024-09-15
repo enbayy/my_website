@@ -6,6 +6,7 @@ import ProjectsPage from './pages/ProjectsPage/ProjectsPage';
 import ContactPage from './pages/ContactPage/ContactPage';
 import AboutPage from './pages/AboutPage/AboutPage';
 import ServicesPage from './pages/ServicesPage/ServicesPage';
+import services from './pages/ServicesPage/ServicesData';
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
           <ProjectsPage />
         </section>
         <section id="services">
-          <ServicesPage />
+          <ServicesPage services={services} />
         </section>
         <section id="contact">
           <ContactPage />

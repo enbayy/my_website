@@ -5,6 +5,7 @@ function ContactPageForm() {
     return (
 
         <form className='form-main'>
+            <div className='text'>İletişim</div>
             <div className='form'>
                 İsim:
                 <input type="text" placeholder='İsim' />
