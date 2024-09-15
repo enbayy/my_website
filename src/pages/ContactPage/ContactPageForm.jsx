@@ -16,6 +16,10 @@ function ContactPageForm() {
                 Metin:
                 <textarea placeholder="Metin Giriniz"></textarea>
             </div>
+            <div className='buttons'>
+                <button className='button-clear'>Temizle</button>
+                <button className='button-send'>Gönder</button>
+            </div>
         </form>
 
     )
