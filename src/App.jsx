@@ -7,6 +7,7 @@ import ContactPage from './pages/ContactPage/ContactPage';
 import AboutPage from './pages/AboutPage/AboutPage';
 import ServicesPage from './pages/ServicesPage/ServicesPage';
 import services from './pages/ServicesPage/ServicesData';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <section id="contact">
           <ContactPage />
         </section>
+        <Footer />
       </div>
     </>
   );
