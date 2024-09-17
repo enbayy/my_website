@@ -58,9 +58,9 @@
 .linked-icon {
     font-size: 30px;
     color: black;
-    opacity: 0; /* Başlangıçta görünmez */
+    opacity: 0;
     animation: fadeInUp 2s ease-out forwards;
-    animation-delay: 2s; /* En son görünme */
+    animation-delay: 2s;
 }
 
 .fade-in-out {
@@ -75,6 +75,7 @@
         opacity: 0;
         transform: translateY(50px);
     }
+
     100% {
         opacity: 1;
         transform: translateY(0);
@@ -82,9 +83,12 @@
 }
 
 @keyframes fadeInOut {
-    0%, 100% {
+
+    0%,
+    100% {
         opacity: 0;
     }
+
     50% {
         opacity: 1;
     }
@@ -94,9 +98,11 @@
     0% {
         transform: scale(1);
     }
+
     50% {
         transform: scale(1.1);
     }
+
     100% {
         transform: scale(1);
     }
@@ -175,9 +181,11 @@
     0% {
         transform: translateY(0) translateX(0) rotate(0deg);
     }
+
     50% {
         transform: translateY(-30vh) translateX(15vw) rotate(360deg);
     }
+
     100% {
         transform: translateY(0) translateX(0) rotate(720deg);
     }

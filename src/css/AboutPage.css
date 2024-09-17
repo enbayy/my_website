@@ -33,6 +33,25 @@
     max-height: 904px;
 }
 
+.contact-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    background: linear-gradient(135deg, #1f1c2c, #928dab);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+}
+
 .about-title {
     font-size: 40px;
     font-weight: bold;
@@ -47,7 +66,7 @@
 
 .about-content {
     font-size: 18px;
-    line-height: 1.7;
+    line-height: 1.8;
     color: #555;
     text-align: justify;
     animation: fadeIn 2s ease-in-out;
