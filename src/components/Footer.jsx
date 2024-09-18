@@ -5,10 +5,7 @@ function Footer() {
     return (
         <div className='footer'>
             <div>
-                E-mail: 1enesbayar@gmail.com
-            </div>
-            <div>
-                Tel no: 0552 231 2086
+                Copy Right 2024 © Enes Bayar tarafından tüm hakları saklıdır.
             </div>
         </div>
     )
