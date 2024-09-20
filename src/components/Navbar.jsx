@@ -3,6 +3,7 @@ import '../css/Navbar.css';
 
 function Navbar() {
     const [showDropdown, setShowDropdown] = useState(false);
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const handleMouseEnter = () => {
         setShowDropdown(true);
@@ -12,10 +13,17 @@ function Navbar() {
         setShowDropdown(false);
     };
 
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
+    };
+
     return (
         <nav className="navbar">
             <div className="navbar-logo">Enes Bayar</div>
-            <ul className="navbar-menu">
+            <div className="burger-menu" onClick={toggleMenu}>
+                &#9776;
+            </div>
+            <ul className={`navbar-menu ${isMenuOpen ? 'open' : ''}`}>
                 <a className="navbar-link" href="#home">Giriş</a>
                 <a className="navbar-link" href="#about">Hakkımda</a>
                 <li

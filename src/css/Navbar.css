@@ -1,6 +1,6 @@
 .navbar {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
     background: linear-gradient(50deg, #1f1c2c, #928dab);
@@ -17,10 +17,29 @@
     font-weight: bold;
 }
 
+.burger-menu {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
 .navbar-menu {
     list-style: none;
     display: flex;
     gap: 30px;
+}
+
+.navbar-menu.open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 65px;
+    left: 0;
+    width: 100%;
+    background-color: #1f1c2c;
+    padding: 20px;
+    gap: 20px;
+    z-index: 999;
 }
 
 .navbar-link {
@@ -32,7 +51,6 @@
 }
 
 .navbar-link:hover {
-    text-decoration: none;
     background: linear-gradient(135deg, #1f1c2c, #928dab);
     background-size: 400% 400%;
     animation: gradientAnimation 3s ease forwards;
@@ -50,36 +68,6 @@
     display: block;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
     z-index: 1000;
-}
-
-.dropdown-link {
-    display: block;
-    padding: 10px 20px;
-    color: white;
-    text-decoration: none;
-}
-
-.dropdown-link:hover {
-    background-color: #928dab;
-    border-radius: 5px;
-}
-
-@keyframes gradientAnimation {
-    0% {
-        background-position: 0% 0%;
-    }
-
-    50% {
-        background-position: 100% 100%;
-    }
-
-    100% {
-        background-position: 100% 100%;
-    }
-}
-
-.dropdown-menu {
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -89,10 +77,44 @@
     animation: gradientAnimation 3s ease forwards;
 }
 
+.dropdown-link {
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+}
+
 .dropdown-link:hover {
     background: linear-gradient(135deg, #1f1c2c, #928dab);
     background-size: 400% 400%;
     animation: gradientAnimation 2s ease forwards;
     border-radius: 50px;
     color: black;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+
+    .navbar-menu.open {
+        display: flex;
+    }
 }
