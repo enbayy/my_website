@@ -11,7 +11,7 @@ function Navbar() {
                 <a className='navbar-link' href="#projects">Çalışmalar</a>
                 <a className='navbar-link' href="#services">Hizmetler</a>
                 <a className='navbar-link' href="#contact">İletişim</a>
-                <a className='navbar-link' href="#cv">CV</a>
+                <a className='navbar-link' href="#about">CV</a>
             </ul>
         </nav>
     );
