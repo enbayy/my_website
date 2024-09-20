@@ -5,7 +5,6 @@
     padding: 10px 20px;
     background: linear-gradient(50deg, #1f1c2c, #928dab);
     color: white;
-    position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -29,6 +28,40 @@
     color: white;
     padding: 7px;
     text-decoration: none;
+    position: relative;
+}
+
+.navbar-link:hover {
+    text-decoration: none;
+    background: linear-gradient(135deg, #1f1c2c, #928dab);
+    background-size: 400% 400%;
+    animation: gradientAnimation 3s ease forwards;
+    border-radius: 10px;
+    box-shadow: 0px 5px 8px black;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #1f1c2c;
+    list-style: none;
+    padding: 10px 0;
+    display: block;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.dropdown-link {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.dropdown-link:hover {
+    background-color: #928dab;
+    border-radius: 5px;
 }
 
 @keyframes gradientAnimation {
@@ -43,19 +76,4 @@
     100% {
         background-position: 100% 100%;
     }
-}
-
-.navbar-link:hover {
-    text-decoration: none;
-    background: linear-gradient(135deg, #1f1c2c, #928dab);
-    background-size: 400% 400%;
-    animation: gradientAnimation 3s ease forwards;
-    border-radius: 10px;
-    box-shadow: 0px 5px 8px black;
-}
-
-.navbar-search input {
-    padding: 5px;
-    border-radius: 4px;
-    border: none;
 }
