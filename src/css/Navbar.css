@@ -77,3 +77,22 @@
         background-position: 100% 100%;
     }
 }
+
+.dropdown-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #928dab, #1f1c2c);
+    background-size: 400% 400%;
+    animation: gradientAnimation 3s ease forwards;
+}
+
+.dropdown-link:hover {
+    background: linear-gradient(135deg, #1f1c2c, #928dab);
+    background-size: 400% 400%;
+    animation: gradientAnimation 2s ease forwards;
+    border-radius: 50px;
+    color: black;
+}
