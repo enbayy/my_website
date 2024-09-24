@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../css/SkillsPage.css'; // CSS dosyamızı import ediyoruz.
+import '../../css/SkillsPage.css';
 
 function SkillsPage() {
     const skills = [
