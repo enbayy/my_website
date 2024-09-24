@@ -1,0 +1,95 @@
+.skills-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .skills-title,
+  .communication-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .skill {
+    margin-bottom: 20px;
+  }
+  
+  .skill-name {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    color: #444;
+  }
+  
+  .progress-bar {
+    background-color: #ddd;
+    border-radius: 20px;
+    height: 30px;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 10px;
+  }
+  
+  .progress-fill {
+    height: 100%;
+    background-color: #4caf50;
+    width: 0;
+    border-radius: 20px;
+    transition: width 2s ease-in-out;
+  }
+  
+  .skill:hover .progress-fill {
+    background-color: #76c7c0;
+  }
+  
+  /* Communication kısmı */
+  .communication-skills {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+  }
+  
+  .communication-skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  
+  .circle {
+    width: 100px;
+    height: 100px;
+    border: 5px solid #4caf50;
+    border-radius: 50%;
+    position: relative;
+    margin-bottom: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .circle-fill {
+    background-color: #4caf50;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    transition: height 2s ease-in-out;
+    z-index: 1;
+  }
+  
+  .communication-skill span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0.9em;
+    color: #fff; /* Yazı rengini beyaz yaparak görünürlüğü artırıyoruz */
+    z-index: 2; /* Yazıyı üst katmana getiriyoruz */
+  }
+  
+  .circle:hover .circle-fill {
+    background-color: #76c7c0; /* Hover'da renk değişimi */
+  }
+  
