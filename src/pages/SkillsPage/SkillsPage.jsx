@@ -1,22 +1,28 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import '../../css/SkillsPage.css';
 
 function SkillsPage() {
+    const [animate, setAnimate] = useState(false);
+
     const skills = [
         { name: 'HTML', level: 90 },
-        { name: 'CSS', level: 85 },
-        { name: 'JavaScript', level: 75 },
-        { name: 'React', level: 70 },
-        { name: 'Node.js', level: 60 },
+        { name: 'CSS', level: 95 },
+        { name: 'JavaScript', level: 80 },
+        { name: 'React', level: 85 },
+        { name: 'Node.js', level: 55 },
     ];
 
     const communicationSkills = [
-        { name: 'Team Work', level: 90 },
-        { name: 'Communication', level: 85 },
-        { name: 'Leadership', level: 75 },
-        { name: 'Creativity', level: 70 },
-        { name: 'Problem Solving', level: 65 },
+        { name: 'Takım Çalışması', level: 90 },
+        { name: 'İletişim', level: 90 },
+        { name: 'Liderlik', level: 80 },
+        { name: 'Yaratıcılık', level: 85 },
+        { name: 'Sorun Çözme', level: 85 },
     ];
+
+    useEffect(() => {
+        setAnimate(true);
+    }, []);
 
     return (
         <div className="skills-container">
@@ -28,7 +34,7 @@ function SkillsPage() {
                         <div className="progress-bar">
                             <div
                                 className="progress-fill"
-                                style={{ width: `${skill.level}%` }}
+                                style={{ width: animate ? `${skill.level}%` : '0%' }}
                             ></div>
                         </div>
                     </div>
@@ -39,10 +45,10 @@ function SkillsPage() {
                 {communicationSkills.map((comSkill, index) => (
                     <div key={index} className="communication-skill">
                         <div className="circle">
-                            <span>{comSkill.name}</span>
+                            <span>{comSkill.name} {comSkill.level}%</span>
                             <div
                                 className="circle-fill"
-                                style={{ height: `${comSkill.level}%` }}
+                                style={{ height: animate ? `${comSkill.level}%` : '0%' }}
                             ></div>
                         </div>
                     </div>
