@@ -24,16 +24,6 @@ function HomePage() {
             <BsLinkedin />
           </a>
         </div>
-        <div className="bar one"></div>
-        <div className="bar two"></div>
-        <div className="bar three"></div>
-        <div className="bar four"></div>
-        <div className="bar five"></div>
-        <div className="bar six"></div>
-        <div className="bar seven"></div>
-        <div className="bar eight"></div>
-        <div className="bar nine"></div>
-        <div className="bar ten"></div>
       </div>
     </section>
   );

@@ -117,59 +117,6 @@
     animation: moveBars 15s infinite ease-in-out;
 }
 
-.bar.one {
-    top: 20%;
-    left: 5%;
-    animation-delay: 0s;
-}
-
-.bar.two {
-    top: 60%;
-    right: 10%;
-    animation-delay: 5s;
-}
-
-.bar.three {
-    top: 50%;
-    left: 30%;
-    animation-delay: 2s;
-}
-
-.bar.four {
-    bottom: 10%;
-    right: 30%;
-    animation-delay: 3s;
-}
-
-.bar.five {
-    top: 30%;
-    left: 20%;
-    animation-delay: 4s;
-}
-
-.bar.six {
-    bottom: 20%;
-    left: 15%;
-    animation-delay: 2s;
-}
-
-.bar.seven {
-    top: 20%;
-    right: 50%;
-    animation-delay: 4s;
-}
-
-.bar.eight {
-    bottom: 60%;
-    right: 5%;
-    animation-delay: 1s;
-}
-
-.bar.nine {
-    top: 30%;
-    left: 70%;
-    animation-delay: 0s;
-}
 
 .bar.ten {
     bottom: 10%;
