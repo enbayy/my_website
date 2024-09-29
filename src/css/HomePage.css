@@ -6,7 +6,7 @@
     height: 100vh;
     overflow: hidden;
     position: relative;
-    background: linear-gradient(135deg, #1f1c2c, #928dab);
+    background: url('../assets/background2.jpg') no-repeat center center/cover;
     font-family: 'Poppins', sans-serif;
     color: white;
     text-align: center;
