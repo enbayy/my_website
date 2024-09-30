@@ -8,7 +8,6 @@ import AboutPage from './pages/AboutPage/AboutPage';
 import ServicesPage from './pages/ServicesPage/ServicesPage';
 import services from './pages/ServicesPage/ServicesData';
 import Footer from './components/Footer';
-import SkillsPage from './pages/SkillsPage/SkillsPage';
 
 function App() {
   return (
@@ -20,9 +19,6 @@ function App() {
         </section>
         <section id="about">
           <AboutPage />
-        </section>
-        <section id="skills">
-          <SkillsPage />
         </section>
         <section id="projects">
           <ProjectsPage />

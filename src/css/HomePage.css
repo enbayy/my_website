@@ -107,33 +107,3 @@
         transform: scale(1);
     }
 }
-
-.bar {
-    position: absolute;
-    width: 4px;
-    height: 150px;
-    background-color: rgba(255, 255, 255, 0.3);
-    border-radius: 50px;
-    animation: moveBars 15s infinite ease-in-out;
-}
-
-
-.bar.ten {
-    bottom: 10%;
-    right: 20%;
-    animation-delay: 3s;
-}
-
-@keyframes moveBars {
-    0% {
-        transform: translateY(0) translateX(0) rotate(0deg);
-    }
-
-    50% {
-        transform: translateY(-30vh) translateX(15vw) rotate(360deg);
-    }
-
-    100% {
-        transform: translateY(0) translateX(0) rotate(720deg);
-    }
-}

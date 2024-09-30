@@ -91,16 +91,22 @@
 
 .show-more,
 .show-less {
-    font-size: 12px;
+    font-size: 15px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 5px;
     border-radius: 5px;
     border: none;
     color: white;
     cursor: pointer;
-    background: linear-gradient(135deg, #1f1c2c, #928dab);
+    background: transparent;
     background-size: 400% 400%;
     animation: gradientAnimation 10s ease infinite;
+    font-weight: bold;
+}
+
+.show-more:hover,
+.show-less:hover {
+    border: solid 1px;
 }
 
 @media (max-width: 768px) {

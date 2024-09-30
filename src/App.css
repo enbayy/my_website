@@ -24,7 +24,6 @@ section {
     transition: background-color 1s ease-in-out;
 }
 
-
 section h1,
 section p {
     margin: 0;
@@ -51,17 +50,6 @@ section p {
     }
 }
 
-#home {
-    background: linear-gradient(135deg, #1f1c2c, #928dab);
-    background-size: 400% 400%;
-    animation: gradientAnimation 10s ease infinite;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-}
-
 #services {
     padding: 0;
     margin: 0;
@@ -70,7 +58,8 @@ section p {
 #projects,
 #contact,
 #about,
-#services {
+#services,
+#home {
     background: url('./assets/background2.jpg') no-repeat center center/cover;
     background-size: 400% 400%;
     animation: gradientAnimation 10s ease infinite;
