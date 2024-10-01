@@ -47,7 +47,7 @@ function AboutPage() {
           becerilerimi pekiştirmemi sağladı.
         </p>
       </div>
-      <div className="button-container">
+      <div className="button-cnt">
         <a href={EnesBayarCv} download="EnesBayarCv.pdf">
           <button className="button">CV İndir</button>
         </a>

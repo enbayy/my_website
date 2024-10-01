@@ -57,7 +57,7 @@
     border: solid 1px;
 }
 
-.button-container {
+.button-cnt {
     display: flex;
     justify-content: space-around;
 }
