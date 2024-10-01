@@ -1,17 +1,24 @@
-import React from 'react'
+import React, { useState } from 'react';
 
 function Projects({ project }) {
-    const { id, title, description, link, image } = project;
+    const { id, title, description, image } = project;
+    const [isHovered, setIsHovered] = useState(false);
+
     return (
-        <div className='project'>
-            <div className='project-all'>
-                <img className='image' src={image} alt="" />
-                <h4 className='title'>{title}</h4>
-                <h5 className='pro-desc'>{description}</h5>
-                <div className='pro-link'><a className='link' href={link} target='_blank'>Videoyu izlemek için tıkla</a></div>
-            </div>
+        <div
+            className='project'
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+        >
+            <img className={`image ${isHovered ? 'blur' : ''}`} src={image} alt={title} />
+            <h4 className='title'>{title}</h4>
+            {isHovered && (
+                <div className='pro-desc'>
+                    {description}
+                </div>
+            )}
         </div>
-    )
+    );
 }
 
-export default Projects
+export default Projects;
