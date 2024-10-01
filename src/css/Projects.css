@@ -8,9 +8,7 @@
     margin: 0 auto;
     position: relative;
     height: auto;
-    /* Yükseklik otomatik olarak ayarlanacak */
     padding: 20px;
-    /* İçerik için padding ekledik */
 }
 
 .project-main {
@@ -19,7 +17,6 @@
     align-items: center;
     margin-top: 12%;
     flex-wrap: wrap;
-    /* Kartların taşmasını önlemek için wrap ekledik */
     overflow: hidden;
     width: 100%;
     max-width: 1200px;
@@ -32,16 +29,13 @@
     align-items: center;
     justify-content: center;
     width: 30%;
-    /* Genişliği %30 yaptık, ekran boyutuna göre ayarlanacak */
     height: 400px;
-    /* Sabit yükseklik */
     border: 1px solid lightgray;
     box-shadow: 1px 1px 10px 1px gray;
     padding: 15px;
     border-radius: 10px;
     background-color: lightgray;
     margin: 10px;
-    /* Kartlar arasında boşluk */
 }
 
 .image {
@@ -68,10 +62,10 @@
 
 .button-container {
     display: flex;
-    justify-content: center; /* Butonları ortalar */
-    position: relative; /* Absolute yerine relative kullanıyoruz */
+    justify-content: center;
+    position: relative;
     width: 100%;
-    align-items: center; /* Dikey ortalama için */
+    align-items: center;
 }
 
 .nav-button {
@@ -89,44 +83,35 @@
     border-radius: 5px;
     opacity: 0.7;
     transition: opacity 0.3s ease;
-   margin-top: 10%;
-    /* Butonlar arasında boşluk */
+    margin-top: 10%;
 }
 
 .nav-button:hover {
     opacity: 1;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
     .project {
         width: 100%;
-        /* Küçük ekranlarda kartlar tam genişlikte olacak */
         height: auto;
-        /* Yükseklik otomatik ayarlanacak */
         margin: 10px 0;
-        /* Dikey boşluk ekledik */
     }
 
     .nav-button {
         width: 40px;
-        /* Buton boyutunu küçült */
         height: 40px;
         font-size: 1.5rem;
-        /* Font boyutunu küçült */
     }
 }
 
 @media (min-width: 769px) and (max-width: 1200px) {
     .project {
         width: 45%;
-        /* Orta boyutlu ekranlarda kartlar %45 genişliğinde */
     }
 }
 
 @media (min-width: 1201px) {
     .project {
         width: 30%;
-        /* Büyük ekranlarda kartlar %30 genişliğinde */
     }
 }
