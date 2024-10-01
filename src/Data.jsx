@@ -14,25 +14,25 @@ export const projects = [
     {
         id: 1,
         title: "Altın Toplama Oyunu",
-        description: "Altınları engellere çarpmadan topla.",
+        description: "Oyuncular, çeşitli engellerle karşılaşarak altın toplama görevini yerine getirirken, hızlı düşünme ve strateji geliştirme yeteneklerini kullanmak zorundadır.",
         image: altinToplama,
     },
     {
         id: 2,
         title: "Otel Sitesi",
-        description: "Konaklamanıza uygun odaları keşfedin.",
+        description: "Otel rezervasyonlarını yönetmeyi, mevcut odaları sergilemeyi ve müşteri etkileşimlerini kolaylaştırmayı amaçlamaktadır.",
         image: hotel,
     },
     {
         id: 3,
         title: "Labirent Oyunu",
-        description: "Topu duvarlara çarpmadan bitişe ulaş.",
+        description: "Labirentte doğru yolları bularak hedefinize ulaşmak, her adımda daha fazla heyecan yaratır. Eğlenceli grafikleri ve zorluk seviyeleriyle, boş zamanlarınızı değerlendirmek için mükemmel bir seçenek.",
         image: labirent,
     },
     {
         id: 4,
         title: "Alışveriş Sitesi",
-        description: "Dilediğin ürünleri kolayca bulup alışveriş yap.",
+        description: "Kullanıcılar, ürünleri görüntüleyebilir, sepete ekleyebilir ve satın alma işlemlerini gerçekleştirebilir. ",
         image: shopping,
     },
     {
@@ -44,37 +44,37 @@ export const projects = [
     {
         id: 6,
         title: "Oyunlar Website",
-        description: "Yapılan oyunlar hakkında bilgiler.",
+        description: "Kullanıcılar, oyunların özelliklerini, ekran görüntülerini ve oynanış videolarını inceleyebilir, ayrıca oyunlarınız hakkında geri bildirimde bulunabilirler.",
         image: games,
     },
     {
         id: 7,
         title: "Runner Oyunu",
-        description: "Altınları toplayarak bitişe ulaşmaya çalış",
+        description: "Oyuncular, engellerden kaçınarak ve hızlarını artırarak hedefe ulaşmalıdır. Artan zorluk seviyeleri ile sürekli bir meydan okuma sağlar.",
         image: runner,
     },
     {
         id: 8,
         title: "Kur Hesaplama",
-        description: "Döviz kurlarını hızlı bir şekilde hesapla.",
+        description: "Güncel döviz kurlarıyla entegre çalışarak anlık veriler sunar. Kullanıcı dostu bir arayüzle, hızlı ve doğru dönüşümler sağlar.",
         image: currency,
     },
     {
         id: 9,
         title: "Tappy Fish Oyunu",
-        description: "Kuşu zıplatarak engellerin arasından geç",
+        description: "Balığı ekrana dokunarak yukarı doğru yönlendirmeli ve engellerden kaçınmalıdır. Oyun, hızlı refleks ve zamanlama gerektirirken, her başarı ile birlikte daha fazla zorlukla karşılaşmanızı sağlar.",
         image: tappyFish,
     },
     {
         id: 10,
         title: "E-ticaret Sitesi",
-        description: "Canavarları ateş ederek yok et",
+        description: "Kullanıcılar, farklı kategorilerdeki ürünleri gözden geçirebilir, sepetlerine ekleyebilir ve güvenli ödeme işlemleriyle alışveriş yapabilirler. Ayrıca, ürün detaylarına erişebilir, filtreleme ve arama seçenekleriyle istedikleri ürünleri kolayca bulabilirler.",
         image: ecommerce,
     },
     {
         id: 11,
         title: "Uzay Oyunu",
-        description: "Canavarları ateş ederek yok et",
+        description: "Hedeflerin dinamik hareketleri, oyuncunun stratejik düşünme yeteneğini zorlar; hızlı kararlar alması ve ateş etme zamanlamasını iyi ayarlaması gerekir. Oyuncu, vurdukça artan skorlarla motive olurken, daha fazla düşman hedefi ve zorluklar da ortaya çıkar.",
         image: uzay,
     }
 ]
