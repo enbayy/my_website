@@ -34,7 +34,7 @@
   flex-direction: column;
   width: 20%;
   height: 50%;
-  background: linear-gradient(360deg, #1f1c2c, #928dab);
+  background: url('../assets/background2.jpg') no-repeat center center/cover;
   background-size: 400% 400%;
   animation: gradientAnimation 10s ease infinite;
   padding: 20px;
@@ -49,14 +49,16 @@
 }
 
 .service-title {
-  font-size: 24px;
+  font-size: 25px;
   color: #fff;
   margin-bottom: 15%;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .service-description {
-  font-size: 16px;
+  font-size: 19px;
   color: #fff;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 @media (max-width: 768px) {
