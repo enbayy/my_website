@@ -3,7 +3,9 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-   background-color: black;
+    background: linear-gradient(135deg, #000000, #767676);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
     color: white;
     position: sticky;
     top: 0;
@@ -31,12 +33,15 @@
 
 .navbar-menu.open {
     display: flex;
+    align-items: center;
     flex-direction: column;
     position: absolute;
     top: 65px;
     left: 0;
     width: 100%;
-    background-color: #1f1c2c;
+    background: linear-gradient(135deg, #000000, #767676);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
     padding: 20px;
     gap: 20px;
     z-index: 999;
@@ -51,9 +56,7 @@
 }
 
 .navbar-link:hover {
-    background: linear-gradient(135deg, #1f1c2c, #928dab);
-    background-size: 400% 400%;
-    animation: gradientAnimation 3s ease forwards;
+    background-color: #767676;
     border-radius: 10px;
     box-shadow: 0px 5px 8px black;
 }

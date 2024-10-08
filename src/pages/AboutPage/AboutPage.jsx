@@ -33,10 +33,10 @@ function AboutPage() {
           deneyimler edindim. İki farklı şirkette staj yaparak oyun geliştirme
           süreçlerinin tüm aşamalarında ve reklam entegrasyonlarında görev
           aldım. Ancak zamanla web teknolojilerine olan ilgim arttı ve kariyerimi
-          Front-End geliştirme üzerine şekillendirmeye karar verdim. Şu anda aktif
-          olarak Front-End geliştirme alanında çalışmalarımı sürdürüyorum.
+          Front-End geliştirme üzerine şekillendirmeye karar verdim.
         </p>
         <p>
+          Aktif olarak Front-End geliştirme alanında çalışmalarımı sürdürüyorum.
           Global bir şirkette başarılı bir staj dönemini tamamladım. Bu süreçte,
           AWS hizmetlerini kullanarak full-stack bir e-ticaret platformu
           geliştirdim. Bu platformda, kullanıcılar ürünleri görüntüleyip sepete

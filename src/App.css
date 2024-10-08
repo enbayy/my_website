@@ -60,7 +60,11 @@ section p {
 #about,
 #services,
 #home {
-    background: url('./assets/background2.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(135deg, #000000, #767676);
     background-size: 400% 400%;
     animation: gradientAnimation 10s ease infinite;
     padding: 0;

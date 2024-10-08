@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../css/ServicesPage.css';
 
-function ServicesPage({services}) {
+function ServicesPage({ services }) {
   return (
     <div className="services-container">
       <h2 className="services-title">Hizmetler</h2>

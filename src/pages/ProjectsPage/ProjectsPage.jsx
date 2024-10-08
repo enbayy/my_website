@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Projects from './Projects';
-import { projects } from '../../Data';
+import { projects } from './Data';
 import '../../css/Projects.css';
 
 function ProjectsPage() {
@@ -22,6 +22,7 @@ function ProjectsPage() {
 
   return (
     <div className='projects-container'>
+      <h2 className="projects-title">Çalışmalar</h2>
       <div className='button-container'>
         <button className='nav-button prev' onClick={prevProject}>
           ‹

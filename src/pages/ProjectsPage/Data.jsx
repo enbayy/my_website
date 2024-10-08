@@ -1,14 +1,14 @@
-import altinToplama from './assets/altinToplama.png'
-import labirent from './assets/labirent.png'
-import puzzle from './assets/puzzle.png'
-import runner from './assets/runner.png'
-import tappyFish from './assets/tappyFish.png'
-import uzay from './assets/uzay.png'
-import currency from './assets/currency.png'
-import games from './assets/games.png'
-import hotel from './assets/hotel.png'
-import shopping from './assets/shopping.png'
-import ecommerce from './assets/e-commerce.png'
+import altinToplama from '../../assets/altinToplama.png'
+import labirent from '../../assets/labirent.png'
+import puzzle from '../../assets/puzzle.png'
+import runner from '../../assets/runner.png'
+import tappyFish from '../../assets/tappyFish.png'
+import uzay from '../../assets/uzay.png'
+import currency from '../../assets/currency.png'
+import games from '../../assets/games.png'
+import hotel from '../../assets/hotel.png'
+import shopping from '../../assets/shopping.png'
+import ecommerce from '../../assets/e-commerce.png'
 
 export const projects = [
     {
@@ -44,7 +44,7 @@ export const projects = [
     {
         id: 6,
         title: "Oyunlar Website",
-        description: "Kullanıcılar, oyunların özelliklerini, ekran görüntülerini ve oynanış videolarını inceleyebilir, ayrıca oyunlarınız hakkında geri bildirimde bulunabilirler.",
+        description: "Kullanıcılar, oyunların özelliklerini, ekran görüntülerini ve oynanış videolarını inceleyebilir.",
         image: games,
     },
     {

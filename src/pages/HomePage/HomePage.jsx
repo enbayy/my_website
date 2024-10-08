@@ -1,9 +1,9 @@
 import React from 'react';
 import '../../css/HomePage.css';
 import { BsLinkedin } from "react-icons/bs";
+import { FaGithub } from "react-icons/fa";
 
 function HomePage() {
-  const text = "Web Developer";
 
   return (
     <section id="home">
@@ -11,18 +11,24 @@ function HomePage() {
         <div className="home-title-container">
           <div className="home-name">Enes Bayar</div>
           <div className="home-subtitle">
-            {text.split("").map((letter, index) => (
-              <span key={index} className="fade-in-out">
-                {letter === " " ? "\u00A0" : letter}
-              </span>
-            ))}
+            <span className="fade-in-out">
+              Web Developer
+            </span>
           </div>
-          <a
-            className='linked-icon'
-            href="https://www.linkedin.com/in/enesbayarr/"
-            target='_blank'>
-            <BsLinkedin />
-          </a>
+          <div className='icons'>
+            <a
+              className='linked-icon'
+              href="https://www.linkedin.com/in/enesbayarr/"
+              target='_blank'>
+              <BsLinkedin />
+            </a>
+            <a
+              className='linked-icon'
+              href="https://github.com/enbayy"
+              target='_blank'>
+              <FaGithub />
+            </a>
+          </div>
         </div>
       </div>
     </section>
