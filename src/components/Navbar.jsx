@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../css/Navbar.css';
 
 function Navbar() {
@@ -7,6 +7,20 @@ function Navbar() {
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
     };
+
+    useEffect(() => {
+        const handleResize = () => {
+            if (window.innerWidth > 768 && isMenuOpen) {
+                setIsMenuOpen(false);
+            }
+        };
+
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, [isMenuOpen]);
 
     return (
         <nav className="navbar">
